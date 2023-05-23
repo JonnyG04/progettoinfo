@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS my_proinfo;
+USE my_proinfo;
+
+CREATE TABLE IF NOT EXISTS Utente
+(
+    IdUtente INT NOT NULL AUTO_INCREMENT,
+    UsernameUtente VARCHAR(50) NOT NULL DEFAULT "",
+    PasswordUtente VARCHAR(50) NOT NULL DEFAULT "",
+    PRIMARY KEY (IdUtente)
+);
+
+<--INSERIMENTO DATI PER LA TABELLA OPERATORE-->
+INSERT INTO Utente (UsernameUtente, PasswordUtente) VALUES
+('user','123')
